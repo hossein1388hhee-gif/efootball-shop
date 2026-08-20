@@ -232,24 +232,6 @@ header p {
     margin-bottom: 14px;
 }
 
-/* TAGS */
-
-.tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 14px;
-}
-
-.tag {
-    background: #fff0f0;
-    color: #c90000;
-    border: 1px solid #ffd0d0;
-    padding: 6px 8px;
-    border-radius: 20px;
-    font-size: 11px;
-}
-
 /* INFO BUTTON */
 
 .info-btn {
@@ -262,6 +244,10 @@ header p {
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.info-btn:active {
+    transform: scale(.98);
 }
 
 /* DETAILS */
@@ -522,11 +508,6 @@ footer {
         font-size: 17px;
     }
 
-    .tag {
-        font-size: 10px;
-        padding: 5px 6px;
-    }
-
     .info-btn {
         font-size: 12px;
         padding: 10px;
@@ -569,9 +550,7 @@ footer {
 
 </header>
 
-
 <div class="container">
-
 
 <!-- FILTER -->
 
@@ -590,7 +569,7 @@ footer {
 <input
 type="text"
 id="search"
-placeholder="مثلاً اکانت ژاپن..."
+placeholder="مثلاً اکانت اول..."
 >
 
 </div>
@@ -799,38 +778,18 @@ onclick="showImage(this.src)"
 </div>
 
 <div class="account-description">
-اکانت eFootball - ریجن ژاپن
+اکانت eFootball
 </div>
 
 <div class="price">
 ۷۰,۰۰۰ تومان
 </div>
 
-<div class="tags">
-
-<div class="tag">
-🇯🇵 ژاپن
-</div>
-
-<div class="tag">
-🎮 لاگ ۸
-</div>
-
-<div class="tag">
-💾 کونامی
-</div>
-
-<div class="tag">
-🪙 ۵۰ سکه
-</div>
-
-</div>
-
 <button
 class="info-btn"
 onclick="showInfo(this)"
 >
-اطلاعات اکانت
+اطلاعات بیشتر
 </button>
 
 <div class="details">
@@ -914,34 +873,18 @@ onclick="showImage(this.src)"
 </div>
 
 <div class="account-description">
-اکانت eFootball - ریجن ژاپن
+اکانت eFootball
 </div>
 
 <div class="price">
 ۲۷۰ تومان
 </div>
 
-<div class="tags">
-
-<div class="tag">
-🇯🇵 ژاپن
-</div>
-
-<div class="tag">
-🎮 لاگ ۱۰
-</div>
-
-<div class="tag">
-💾 کونامی
-</div>
-
-</div>
-
 <button
 class="info-btn"
 onclick="showInfo(this)"
 >
-اطلاعات اکانت
+اطلاعات بیشتر
 </button>
 
 <div class="details">
@@ -1020,34 +963,18 @@ onclick="showImage(this.src)"
 </div>
 
 <div class="account-description">
-اکانت eFootball - ریجن ژاپن
+اکانت eFootball
 </div>
 
 <div class="price">
 ۹۰۰ تومان
 </div>
 
-<div class="tags">
-
-<div class="tag">
-🇯🇵 ژاپن
-</div>
-
-<div class="tag">
-🎮 لاگ ۶
-</div>
-
-<div class="tag">
-💾 کونامی
-</div>
-
-</div>
-
 <button
 class="info-btn"
 onclick="showInfo(this)"
 >
-اطلاعات اکانت
+اطلاعات بیشتر
 </button>
 
 <div class="details">
@@ -1097,6 +1024,455 @@ onclick="showBuy()"
 
 </div>
 
+
+<!-- ACCOUNT 4 -->
+
+<div
+class="account-card"
+data-name="اکانت چهارم"
+data-price="150000"
+data-region="ژاپن"
+data-save="کونامی"
+data-coins="0"
+>
+
+<div class="account-image">
+
+<img
+src="Hyyu.jpg"
+alt="اکانت چهارم"
+onclick="showImage(this.src)"
+>
+
+</div>
+
+<div class="card-content">
+
+<div class="account-name">
+اکانت چهارم
+</div>
+
+<div class="account-description">
+اکانت eFootball
+</div>
+
+<div class="price">
+۱۵۰,۰۰۰ تومان
+</div>
+
+<button
+class="info-btn"
+onclick="showInfo(this)"
+>
+اطلاعات بیشتر
+</button>
+
+<div class="details">
+
+<div class="detail-row">
+<span class="detail-label">ریجن</span>
+<span class="detail-value">ژاپن 🇯🇵</span>
+</div>
+
+<div class="detail-row">
+<span class="detail-label">لاگ</span>
+<span class="detail-value">۶</span>
+</div>
+
+<div class="detail-row">
+<span class="detail-label">سیو</span>
+<span class="detail-value">کونامی</span>
+</div>
+
+<div class="detail-row">
+<span class="detail-label">قیمت</span>
+<span class="detail-value">۱۵۰,۰۰۰ تومان</span>
+</div>
+
+<div class="buy-box">
+
+<h3>
+🛒 خرید اکانت
+</h3>
+
+<p>
+برای خرید این اکانت به شماره زیر پیام دهید:
+</p>
+
+<button
+class="buy-btn"
+onclick="showBuy()"
+>
+📞 شماره خرید
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ACCOUNT 5 -->
+
+<div
+class="account-card"
+data-name="اکانت پنجم"
+data-price="120000"
+data-region="ژاپن"
+data-save="کونامی"
+data-coins="0"
+>
+
+<div class="account-image">
+
+<img
+src="Hgg.jpg"
+alt="اکانت پنجم"
+onclick="showImage(this.src)"
+>
+
+</div>
+
+<div class="card-content">
+
+<div class="account-name">
+اکانت پنجم
+</div>
+
+<div class="account-description">
+اکانت eFootball
+</div>
+
+<div class="price">
+۱۲۰,۰۰۰ تومان
+</div>
+
+<button
+class="info-btn"
+onclick="showInfo(this)"
+>
+اطلاعات بیشتر
+</button>
+
+<div class="details">
+
+<div class="detail-row">
+<span class="detail-label">ریجن</span>
+<span class="detail-value">ژاپن 🇯🇵</span>
+</div>
+
+<div class="detail-row">
+<span class="detail-label">لاگ</span>
+<span class="detail-value">۱</span>
+</div>
+
+<div class="detail-row">
+<span class="detail-label">سیو</span>
+<span class="detail-value">کونامی</span>
+</div>
+
+<div class="detail-row">
+<span class="detail-label">قیمت</span>
+<span class="detail-value">۱۲۰,۰۰۰ تومان</span>
+</div>
+
+<div class="buy-box">
+
+<h3>
+🛒 خرید اکانت
+</h3>
+
+<p>
+برای خرید این اکانت به شماره زیر پیام دهید:
+</p>
+
+<button
+class="buy-btn"
+onclick="showBuy()"
+>
+📞 شماره خرید
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ACCOUNT 6 -->
+
+<div
+class="account-card"
+data-name="اکانت ششم"
+data-price="50000"
+data-region="ژاپن"
+data-save="کونامی"
+data-coins="0"
+>
+
+<div class="account-image">
+
+<img
+src="Hjji.jpg"
+alt="اکانت ششم"
+onclick="showImage(this.src)"
+>
+
+</div>
+
+<div class="card-content">
+
+<div class="account-name">
+اکانت ششم
+</div>
+
+<div class="account-description">
+اکانت eFootball
+</div>
+
+<div class="price">
+۵۰,۰۰۰ تومان
+</div>
+
+<button
+class="info-btn"
+onclick="showInfo(this)"
+>
+اطلاعات بیشتر
+</button>
+
+<div class="details">
+
+<div class="detail-row">
+<span class="detail-label">ریجن</span>
+<span class="detail-value">ژاپن 🇯🇵</span>
+</div>
+
+<div class="detail-row">
+<span class="detail-label">لاگ</span>
+<span class="detail-value">۵</span>
+</div>
+
+<div class="detail-row">
+<span class="detail-label">سیو</span>
+<span class="detail-value">کونامی</span>
+</div>
+
+<div class="detail-row">
+<span class="detail-label">قیمت</span>
+<span class="detail-value">۵۰,۰۰۰ تومان</span>
+</div>
+
+<div class="buy-box">
+
+<h3>
+🛒 خرید اکانت
+</h3>
+
+<p>
+برای خرید این اکانت به شماره زیر پیام دهید:
+</p>
+
+<button
+class="buy-btn"
+onclick="showBuy()"
+>
+📞 شماره خرید
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ACCOUNT 7 -->
+
+<div
+class="account-card"
+data-name="اکانت هفتم"
+data-price="100000"
+data-region="ژاپن"
+data-save="کونامی"
+data-coins="0"
+>
+
+<div class="account-image">
+
+<img
+src="IMG_20260820_224700_341.jpg"
+alt="اکانت هفتم"
+onclick="showImage(this.src)"
+>
+
+</div>
+
+<div class="card-content">
+
+<div class="account-name">
+اکانت هفتم
+</div>
+
+<div class="account-description">
+اکانت eFootball
+</div>
+
+<div class="price">
+۱۰۰,۰۰۰ تومان
+</div>
+
+<button
+class="info-btn"
+onclick="showInfo(this)"
+>
+اطلاعات بیشتر
+</button>
+
+<div class="details">
+
+<div class="detail-row">
+<span class="detail-label">ریجن</span>
+<span class="detail-value">ژاپن 🇯🇵</span>
+</div>
+
+<div class="detail-row">
+<span class="detail-label">لاگ</span>
+<span class="detail-value">۳</span>
+</div>
+
+<div class="detail-row">
+<span class="detail-label">سیو</span>
+<span class="detail-value">کونامی</span>
+</div>
+
+<div class="detail-row">
+<span class="detail-label">قیمت</span>
+<span class="detail-value">۱۰۰,۰۰۰ تومان</span>
+</div>
+
+<div class="buy-box">
+
+<h3>
+🛒 خرید اکانت
+</h3>
+
+<p>
+برای خرید این اکانت به شماره زیر پیام دهید:
+</p>
+
+<button
+class="buy-btn"
+onclick="showBuy()"
+>
+📞 شماره خرید
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- ACCOUNT 8 -->
+
+<div
+class="account-card"
+data-name="اکانت هشتم"
+data-price="50000"
+data-region="ژاپن"
+data-save="کونامی"
+data-coins="0"
+>
+
+<div class="account-image">
+
+<img
+src="IMG_20260820_224804_795.jpg"
+alt="اکانت هشتم"
+onclick="showImage(this.src)"
+>
+
+</div>
+
+<div class="card-content">
+
+<div class="account-name">
+اکانت هشتم
+</div>
+
+<div class="account-description">
+اکانت eFootball
+</div>
+
+<div class="price">
+۵۰,۰۰۰ تومان
+</div>
+
+<button
+class="info-btn"
+onclick="showInfo(this)"
+>
+اطلاعات بیشتر
+</button>
+
+<div class="details">
+
+<div class="detail-row">
+<span class="detail-label">ریجن</span>
+<span class="detail-value">ژاپن 🇯🇵</span>
+</div>
+
+<div class="detail-row">
+<span class="detail-label">لاگ</span>
+<span class="detail-value">۸</span>
+</div>
+
+<div class="detail-row">
+<span class="detail-label">سیو</span>
+<span class="detail-value">کونامی</span>
+</div>
+
+<div class="detail-row">
+<span class="detail-label">قیمت</span>
+<span class="detail-value">۵۰,۰۰۰ تومان</span>
+</div>
+
+<div class="buy-box">
+
+<h3>
+🛒 خرید اکانت
+</h3>
+
+<p>
+برای خرید این اکانت به شماره زیر پیام دهید:
+</p>
+
+<button
+class="buy-btn"
+onclick="showBuy()"
+>
+📞 شماره خرید
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 
@@ -1155,7 +1531,6 @@ target="_blank"
 </div>
 
 </div>
-
 
 </div>
 
@@ -1316,7 +1691,7 @@ function showInfo(button) {
         details.style.display = "none";
 
         button.innerText =
-            "اطلاعات اکانت";
+            "اطلاعات بیشتر";
 
     } else {
 
@@ -1567,4 +1942,4 @@ document.addEventListener(
 </script>
 
 </body>
-</html>
+    </html>
